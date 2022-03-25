@@ -55,5 +55,11 @@ namespace MyProject
         {
             MyFrame.Content = new TimeSheet();
         }
+
+        private void MyFrame_Loaded(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Content = new Home();
+            //MongoDataBase.AddAdminToDB("Admin", "Admin", "Admin", "admin");
+        }
     }
 }

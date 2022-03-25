@@ -10,12 +10,13 @@
 
     <Grid Background="White">
         <Label Content="Фамилия:" HorizontalAlignment="Left" Margin="10,30,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" FontWeight="Bold" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Margin="110,30,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="16" FontWeight="Normal" Text="Surname" FlowDirection="RightToLeft"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Margin="110,30,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="16" FontWeight="Normal" Text="Surname" FlowDirection="RightToLeft" GotFocus="txtSurname_GotFocus" />
         <Label Content="Имя:" HorizontalAlignment="Left" Margin="10,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="59" FontWeight="Bold" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Margin="110,60,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="16" FontWeight="Normal" Text="Name" FlowDirection="RightToLeft"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="110,60,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="16" FontWeight="Normal" Text="Name" FlowDirection="RightToLeft" GotFocus="txtName_GotFocus" />
         <Label Content="Введите пароль:" HorizontalAlignment="Left" Margin="10,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="104" FontWeight="Bold" FontSize="11"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="110,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="23"/>
-        <RadioButton Content="Admin" HorizontalAlignment="Left" Margin="110,118,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <RadioButton Content="Worker" HorizontalAlignment="Left" Margin="253,118,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="110,90,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="23"/>
+        <RadioButton x:Name="rbAdmin" Content="Admin" HorizontalAlignment="Left" Margin="315,90,0,0" VerticalAlignment="Top" Loaded="rbAdmin_Loaded"/>
+        <RadioButton x:Name="rbWorker" Content="Worker" HorizontalAlignment="Left" Margin="315,108,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnLogIn" Content="Log in" HorizontalAlignment="Left" Margin="110,120,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="23" FontSize="14" FontWeight="Bold" Click="btnLogIn_Click"/>
     </Grid>
 </Page>

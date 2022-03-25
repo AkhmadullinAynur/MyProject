@@ -21,7 +21,7 @@
                 <Button x:Name="btnTable" Height="25" Width="135" Margin="0,0,0,0" Content="Табель" FontWeight="Bold" Click="btnTable_Click"/>
             </Menu>
         </StackPanel>
-        <Frame x:Name="MyFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+        <Frame x:Name="MyFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Loaded="MyFrame_Loaded"></Frame>
     </Grid>
 
 </Window>
